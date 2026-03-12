@@ -132,7 +132,10 @@ namespace PraktikumADO
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Terjadi kesalahan : " + ex.Message,
+                                "Error",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
             }
         }
         // Menambahkan  fungsi update SKS mata kuliah
