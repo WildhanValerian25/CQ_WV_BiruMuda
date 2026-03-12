@@ -34,6 +34,9 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtHasil = new System.Windows.Forms.TextBox();
+            this.btnHitungDosen = new System.Windows.Forms.Button();
+            this.btnUpdateMK = new System.Windows.Forms.Button();
+            this.btnInsert = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnConnect
@@ -65,7 +68,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(643, 374);
+            this.btnUpdate.Location = new System.Drawing.Point(864, 370);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 3;
@@ -88,11 +91,41 @@
             this.txtHasil.Size = new System.Drawing.Size(258, 22);
             this.txtHasil.TabIndex = 5;
             // 
+            // btnHitungDosen
+            // 
+            this.btnHitungDosen.Location = new System.Drawing.Point(477, 367);
+            this.btnHitungDosen.Name = "btnHitungDosen";
+            this.btnHitungDosen.Size = new System.Drawing.Size(112, 23);
+            this.btnHitungDosen.TabIndex = 6;
+            this.btnHitungDosen.Text = "HitungDosen";
+            this.btnHitungDosen.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdateMK
+            // 
+            this.btnUpdateMK.Location = new System.Drawing.Point(613, 370);
+            this.btnUpdateMK.Name = "btnUpdateMK";
+            this.btnUpdateMK.Size = new System.Drawing.Size(98, 23);
+            this.btnUpdateMK.TabIndex = 7;
+            this.btnUpdateMK.Text = "Update MK";
+            this.btnUpdateMK.UseVisualStyleBackColor = true;
+            // 
+            // btnInsert
+            // 
+            this.btnInsert.Location = new System.Drawing.Point(758, 370);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(75, 23);
+            this.btnInsert.TabIndex = 8;
+            this.btnInsert.Text = "Insert Prodi";
+            this.btnInsert.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(993, 450);
+            this.Controls.Add(this.btnInsert);
+            this.Controls.Add(this.btnUpdateMK);
+            this.Controls.Add(this.btnHitungDosen);
             this.Controls.Add(this.txtHasil);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnUpdate);
@@ -115,6 +148,9 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtHasil;
+        private System.Windows.Forms.Button btnHitungDosen;
+        private System.Windows.Forms.Button btnUpdateMK;
+        private System.Windows.Forms.Button btnInsert;
     }
 }
 
