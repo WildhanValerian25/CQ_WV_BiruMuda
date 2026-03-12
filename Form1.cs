@@ -183,7 +183,20 @@ namespace PraktikumADO
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                Koneksi();
+                conn.Open();
+                MessageBox.Show("Koneksi berhasil saat load!");
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error saat load: " + ex.Message,
+                                "Error",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+            }
         }
     }
 }
