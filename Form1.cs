@@ -45,9 +45,13 @@ namespace PraktikumADO
                 MessageBox.Show("Koneksi ke database berhasil!");
                 conn.Close();
             }
+            // sekitar line 45-48
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Terjadi kesalahan : " + ex.Message,
+                                "Error",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
             }
         }
         //  Menghitung jumlah mahasiswa menggunakan ExecuteScalar
