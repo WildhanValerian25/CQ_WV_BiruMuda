@@ -22,6 +22,12 @@ namespace PraktikumADO
             InitializeComponent();
         }
 
+        private void Koneksi()
+        {
+            conn = new SqlConnection(
+                "Data Source=LAPTOP-24A5CGHI\\WILDHANFIGHT;Initial Catalog=DBAkademikADO;Integrated Security=True"
+            );
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
 
