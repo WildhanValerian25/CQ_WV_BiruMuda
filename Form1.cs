@@ -134,6 +134,24 @@ namespace PraktikumADO
                 MessageBox.Show(ex.Message);
             }
         }
+        // Menambahkan fungsi insert program studi 
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Koneksi();
+                conn.Open();
+                string query = "INSERT INTO ProgramStudi VALUES('MI01','Manajemen Informatika')";
+                cmd = new SqlCommand(query, conn);
+                int hasil = cmd.ExecuteNonQuery();
+                MessageBox.Show("Data berhasil ditambahkan! Baris terpengaruh : " + hasil);
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
 
