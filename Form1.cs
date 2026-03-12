@@ -13,6 +13,10 @@ namespace PraktikumADO
 {
     public partial class Form1 : Form
     {
+
+        // "Tambah variabel SqlConnection dan SqlCommand"
+        SqlConnection conn;
+        SqlCommand cmd;
         public Form1()
         {
             InitializeComponent();
