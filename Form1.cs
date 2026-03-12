@@ -22,11 +22,17 @@ namespace PraktikumADO
             InitializeComponent();
         }
 
+        // Menambhakn fungsi koneksi ke database 
         private void Koneksi()
         {
             conn = new SqlConnection(
-                "Data Source=LAPTOP-24A5CGHI\\WILDHANFIGHT;Initial Catalog=DBAkademikADO;Integrated Security=True"
+                "Data Source=NAMA_SERVER_KAMU;Initial Catalog=DBAkademikADO;Integrated Security=True"
             );
+            // Menambahkan Validasi cek status Koneksi
+            if (conn.State == ConnectionState.Open)
+            {
+                conn.Close();
+            }
         }
 
         // Menambahkan fungsi tombol connect
@@ -152,6 +158,7 @@ namespace PraktikumADO
                 MessageBox.Show(ex.Message);
             }
         }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
